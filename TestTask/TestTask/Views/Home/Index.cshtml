@@ -1,0 +1,14 @@
+﻿@model string
+
+<div class="text-center">
+    <h1 class="display-4">Enter your link here </h1>
+    <form asp-controller="HtmlParser" asp-action="LoadWebPage">
+        <input type="text" name="text" />
+        <input type="submit" />
+    </form>
+    @if (Model!=null)
+    {
+        <p>@Model</p>
+    }
+</div>
+
